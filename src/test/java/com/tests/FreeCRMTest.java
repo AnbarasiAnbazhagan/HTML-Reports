@@ -35,8 +35,8 @@ public class FreeCRMTest {
 	@BeforeTest
 	public void setExtent(){
 		extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html", true);
-		extent.addSystemInfo("Host Name", "Naveen Mac");
-		extent.addSystemInfo("User Name", "Naveen Automation Labs");
+		extent.addSystemInfo("Host Name", "Anbarasi Windows");
+		extent.addSystemInfo("User Name", "Anbarasi Anbazhagan");
 		extent.addSystemInfo("Environment", "QA");
 		
 	}
@@ -66,12 +66,12 @@ public class FreeCRMTest {
 	@BeforeMethod
 	public void setup(){
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Selenium_Practice\\chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\ExtentReportScreenShot\\chromedriver.exe");	
 		driver = new ChromeDriver(); 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
 		driver.get("https://www.freecrm.com/");
 		
@@ -80,17 +80,18 @@ public class FreeCRMTest {
 	
 	
 	@Test
-	public void freeCrmTitleTest(){
+	public void freeCrmTitleTest() throws InterruptedException{
 		extentTest = extent.startTest("freeCrmTitleTest");
+		Thread.sleep(2000);
 		String title = driver.getTitle();
 		System.out.println(title);
-		Assert.assertEquals(title,"#1 Free CRM for Any Business: Online Customer Relationship Software123");
+		Assert.assertEquals(title,"Free CRM #1 cloud software for any business large or small");
 	}
 	
 	@Test
 	public void freemCRMLogoTest(){
 		extentTest = extent.startTest("freemCRMLogoTest");
-		boolean b = driver.findElement(By.xpath("//img[@class='img-responsive111']")).isDisplayed();
+		boolean b = driver.findElement(By.xpath("//div[@class='rd-navbar-brand']//a[@title='free crm home']")).isDisplayed();
 		Assert.assertTrue(b);
 	}
 	

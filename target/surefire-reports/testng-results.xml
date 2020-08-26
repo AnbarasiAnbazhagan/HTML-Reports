@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-08-26T03:14:21Z" name="Surefire suite" finished-at="2020-08-26T03:14:59Z" duration-ms="37844">
+    <groups>
+    </groups>
+    <test started-at="2020-08-26T03:14:21Z" name="Surefire test" finished-at="2020-08-26T03:14:59Z" duration-ms="37844">
+      <class name="com.tests.FreeCRMTest">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.tests.FreeCRMTest@7d8995e]" started-at="2020-08-26T08:44:21Z" name="setExtent" finished-at="2020-08-26T08:44:22Z" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.FreeCRMTest@7d8995e]" started-at="2020-08-26T08:44:22Z" name="setup" finished-at="2020-08-26T08:44:40Z" duration-ms="18550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="freeCrmTitleTest()[pri:0, instance:com.tests.FreeCRMTest@7d8995e]" started-at="2020-08-26T08:44:40Z" name="freeCrmTitleTest" finished-at="2020-08-26T08:44:42Z" duration-ms="2037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeCrmTitleTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.tests.FreeCRMTest@7d8995e]" started-at="2020-08-26T08:44:42Z" name="tearDown" finished-at="2020-08-26T08:44:44Z" duration-ms="1215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=freeCrmTitleTest status=SUCCESS method=FreeCRMTest.freeCrmTitleTest()[pri:0, instance:com.tests.FreeCRMTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.FreeCRMTest@7d8995e]" started-at="2020-08-26T08:44:44Z" name="setup" finished-at="2020-08-26T08:44:56Z" duration-ms="12501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="freemCRMLogoTest()[pri:0, instance:com.tests.FreeCRMTest@7d8995e]" started-at="2020-08-26T08:44:56Z" name="freemCRMLogoTest" finished-at="2020-08-26T08:44:57Z" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freemCRMLogoTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.tests.FreeCRMTest@7d8995e]" started-at="2020-08-26T08:44:57Z" name="tearDown" finished-at="2020-08-26T08:44:58Z" duration-ms="1122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=freemCRMLogoTest status=SUCCESS method=FreeCRMTest.freemCRMLogoTest()[pri:0, instance:com.tests.FreeCRMTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.tests.FreeCRMTest@7d8995e]" started-at="2020-08-26T08:44:58Z" name="endReport" finished-at="2020-08-26T08:44:59Z" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.tests.FreeCRMTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
